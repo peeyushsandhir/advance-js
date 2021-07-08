@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByTagName LOOP</title>
+</head>
+<body>
+    <h1>We are learning JS</h1>
+    <h1>Subscribe GeekyShows</h1>
+    <h2>Now</h2>
+    <p id="geek">Hello
+        <span>GeekyShows</span>
+        <em>World</em>
+        <span>Youtube</span>
+        <h4>block level element wouldn't be the part of this/any other block level element</h4>
+    </p>
+    <p id="find">
+        <span>Bye</span>
+        GeekyShows
+    </p>
+    <div>
+        <p>!st p inside div</p>
+        <p>2nd p inside div</p>
+    </div>
+    <script>
+        let p = document.getElementsByTagName('p');
+        let p1 = document.getElementsByTagName('p')[1];
+        console.log(p);
+        console.log(p1);
+
+        let len = p.length;
+        for(i=0; i<len; i++){
+            let r = p[i];
+            console.log(r);
+        }
+
+
+    </script>
+</body>
+</html>

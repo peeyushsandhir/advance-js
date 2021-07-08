@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByTagName more specific</title>
+</head>
+<body>
+    <h1>We are learning JS</h1>
+    <h1>Subscribe GeekyShows</h1>
+    <h2>Now</h2>
+    <p id="geek">Hello
+        <span>GeekyShows</span>
+        <em>World</em>
+        <span>Youtube</span>
+        <h1>block level element wouldn't be the part of this</h1>
+    </p>
+    <p id="find">
+        <span>Bye</span>
+        GeekyShows
+    </p>
+    <div>
+        <p>!st p inside div</p>
+        <p>2nd p inside div</p>
+    </div>
+    <script>
+        let r1 = document.getElementsByTagName('span');
+        let geek = document.getElementById('geek');
+        let r2 = geek.getElementsByTagName('span');
+        let r3 = geek.getElementsByTagName('*');
+        console.log(r1,r2,r3);
+    </script>
+</body>
+</html>

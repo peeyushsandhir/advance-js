@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElmentsByTagName</title>
+</head>
+<body>
+    <h1>getElementsByTagName</h1>
+    <p>this method accepts <b>" * "</b></p>
+    <p>one can use <b>length </b>property to loop through all the elements</p>
+
+    <script>
+        let a = document.getElementsByTagName('p');
+        let b = document.getElementsByTagName('*');
+        console.log(a, a.length);
+        console.log(b, b.length);
+
+        let c = document.body.getElementsByTagName('*');
+        console.log(c, c.length);
+    </script>
+</body>
+</html>
