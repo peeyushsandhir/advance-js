@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>properties of Node object</title>
+</head>
+<body>
+    <h1 id="myh1"> We are learning JS <!-- this is comment --> </h1>
+    <p id="myp">I am paragraph</p>
+    <script>
+        console.log('---------document-----------');
+        console.log(document.nodeName);
+        console.log(document.nodeValue);
+        console.log(document.nodeType);
+
+        let elm = document.getElementById('myh1');
+
+        console.log('---------Element   -----------');
+        console.log(elm.nodeName);
+        console.log(elm.nodeValue);
+        console.log(elm.nodeType);
+
+        console.log('---------Text-----------');
+        console.log(elm.firstChild.nodeName);
+        console.log(elm.firstChild.nodeValue);
+        console.log(elm.firstChild.nodeType);
+        
+        console.log('---------Comment-----------');
+        console.log(elm.firstChild.nextSibling.nodeName);
+        console.log(elm.firstChild.nextSibling.nodeValue);
+        console.log(elm.firstChild.nextSibling.nodeType);
+
+        console.log('---------setting new text value-----------');
+        elm.firstChild.nodeValue = 'manipulated content';
+
+
+
+
+    </script>
+    <img src="images/5 element access methods.jpg">
+    <img src="images/20 nodeName.jpg">
+    <img src="images/20 nodeValue.jpg">
+    <img src="images/20 nodeType.jpg">
+</body>
+</html>
