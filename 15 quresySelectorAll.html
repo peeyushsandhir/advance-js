@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll</title>
+</head>
+<body>
+    <h3>returns a static (not live) node list</h3>
+    <h1 id="show1">We are learning JS</h1>
+    <h1 class="geek myclass">Subscribe GeekyShows</h1>
+    <h2>Now</h2>
+    <p class="geek">Hello
+        <span>GeekyShows</span>
+        <em>World</em>
+        <span>Youtube</span>
+        <h4>block level element wouldn't be the part of this/any other block level element</h4>
+    </p>
+    <p class="myclass">
+        <span>Bye</span>
+        GeekyShows
+    </p>
+    <div id="show">
+        <p>!st p inside div</p>
+        <p class="geek">2nd p inside div</p>
+    </div>
+    <p id="show1">2nd p </p>
+    <div id="show2">i am div</div>
+    <div>i am div without attribute</div>
+    <script>
+        // element selector
+        let p = document.querySelectorAll('p');
+        console.log(p);
+        let elm = document.querySelectorAll('h1, h2, h3');
+        console.log(elm);
+        let mix = document.querySelectorAll('h3, #show2');
+        console.log(mix);
+
+        // id selector
+        let show1 = document.querySelectorAll('#show1');
+        console.log(show1);
+
+        // class selector
+        let geek = document.querySelectorAll('.geek');
+        console.log(geek);
+
+        // attribute selector
+        let a = document.querySelectorAll('div[id]');
+        console.log(a);
+        let b = document.querySelectorAll('div[id = "show"]');
+        console.log(b);
+    </script>
+</body>
+</html>
