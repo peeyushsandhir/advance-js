@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>properties of Attribute object</title>
+</head>
+<body>
+    <h1 id="myh1" class="myclass">We are learning JS <!-- this is comment --> </h1>
+    <p id="myp">I am paragraph</p>
+    <script>
+        // Attribute properties:- name, value
+        let elm = document.getElementById('myh1');
+
+        /* name property */
+        // elm.attributes[0].nodeName;  DEPRICATED
+        // elm.attributes[0].name
+        let a = elm.attributes[0];
+        let b = elm.attributes[1];
+
+        console.log(a.name,a.value);
+        console.log(b.name,b.value);
+
+        /* LENGTH property */
+        let len = elm.attributes.length;
+        console.log(len);
+    </script>
+</body>
+</html>
