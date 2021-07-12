@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childNodes - children</title>
+</head>
+<body id="mybody">
+    <h1 id="myh1"> 
+        <!-- this is comment --> 
+        <span>We are learning JS.</span>
+        <em>Hello</em>
+    </h1>
+    <p id="myp">I am paragraph</p>
+    <p id="myp2"><span>I am span.</span> I am paragraph</p>
+    ---------------------------------<br>
+    <script>
+        let mybody = document.getElementById('mybody');
+        // childNodes
+        console.log(mybody.childNodes);
+
+        // length
+        console.log(mybody.childNodes.length);
+
+        // children
+        console.log(mybody.children);
+        console.log(mybody.children.length);
+
+        // accessing a perticular node
+        console.log(mybody.childNodes[0]);
+        console.log(mybody.childNodes[1]);
+
+        let myh1 = document.getElementById('myh1');
+        myh1.children[0].textContent
+        
+        // for loop
+        let len1 = myh1.children.length;
+        for(i=0; i<len1; i++){
+            document.write(myh1.children[i].textContent+'<br>');
+        }
+    </script>
+</body>
+</html>

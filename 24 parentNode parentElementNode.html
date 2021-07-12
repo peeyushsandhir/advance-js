@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" id="myid">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parentNode parentElementNode</title>
+</head>
+<body>
+    <h1 id="myh1">We are learning JS <!-- this is comment --> </h1>
+    <p>I am paragraph</p>
+    <script>
+        let myhtml = document.getElementById('myid');
+        console.log(myhtml.parentNode);
+        console.log(myhtml.parentElement);
+
+        let myh1 = document.getElementById('myh1');
+        console.log(myh1.parentElement);
+        console.log(myh1.parentNode);
+    </script>
+</body>
+</html>
