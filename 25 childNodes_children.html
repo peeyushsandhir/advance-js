@@ -17,8 +17,12 @@
     ---------------------------------<br>
     <script>
         let mybody = document.getElementById('mybody');
+
         // childNodes
         console.log(mybody.childNodes);
+
+        // accessing a perticular node
+        console.log(mybody.childNodes[0]);
 
         // length
         console.log(mybody.childNodes.length);
@@ -27,18 +31,10 @@
         console.log(mybody.children);
         console.log(mybody.children.length);
 
-        // accessing a perticular node
-        console.log(mybody.childNodes[0]);
-        console.log(mybody.childNodes[1]);
-
+        // content of a node
         let myh1 = document.getElementById('myh1');
         myh1.children[0].textContent
-        
-        // for loop
-        let len1 = myh1.children.length;
-        for(i=0; i<len1; i++){
-            document.write(myh1.children[i].textContent+'<br>');
-        }
+    
     </script>
 </body>
 </html>
