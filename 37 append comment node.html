@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append comment node</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1>We are learning JS</h1>
+    </div>
+    <script>
+        let div = document.getElementById('mydiv');
+        // creating new comment
+        let comm = document.createComment('comment by JS');
+        // appending comm to div
+        div.appendChild(comm);
+        console.log(div);
+    </script>
+</body>
+</html>

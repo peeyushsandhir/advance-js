@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appen element text comment together</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1>We are learning JS</h1>
+    </div>
+    <script>
+        let div = document.getElementById('mydiv');
+        let h2 = document.createElement('h2');
+        let txt = document.createTextNode('text by JS');
+        let comm = document.createComment('comment by JS');
+
+        // appending txt & comm to h2
+        h2.appendChild(txt);
+        h2.appendChild(comm);
+
+        // appending h2 to div
+        div.appendChild(h2);
+        
+        console.log(div);
+    </script>
+</body>
+</html>
