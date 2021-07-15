@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeChild</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>item 1</li>
+        <li id="item_2">item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <script>
+        let myul = document.getElementById('myul');
+        let item2 = document.getElementById('item_2');
+
+        // removing child
+        let delNode = myul.removeChild(item2);
+        console.log(delNode);
+    </script>
+    <img src="images/50 removeChild.jpg" style="float: right;">
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertBefore</title>
+</head>
+<body>
+    <div>
+        <ul id="myul">
+            <li>Jquery</li>
+            <li id="myang">Angular</li>
+            <li>React JS</li>
+            <li id="myD3">D3 JS</li>
+        </ul>
+        <ul> other list
+            <li>java</li>
+            <li id="myc">c++ (from other list)</li>
+        </ul>
+    </div>
+    <script>
+        // parentNode.insertBefore(newNode, refNode)
+        let parentNode = document.getElementById('myul');
+        let refNode = document.getElementById('myang');
+        let newNode = document.createElement('li');
+        newNode.textContent = 'Backbone js';
+
+        // insertint new elelment
+        parentNode.insertBefore(newNode, refNode);
+        // inserting new text node
+        let txt = document.createTextNode('new text');
+        parentNode.insertBefore(txt, null);// insert txt at the last of list
+
+        // moving existing node
+        let myc = document.getElementById('myc');
+        parentNode.insertBefore(myc, refNode)
+    </script>
+</body>
+</html>

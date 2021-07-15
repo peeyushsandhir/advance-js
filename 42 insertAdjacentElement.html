@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAdjacentElement</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1 id="myh1">Heading 1</h1>
+        <h1 id="myh2">Heading 2</h1>
+        <h1 id="myh3">Heading 3</h1>
+    </div>
+    <script>
+        // position: 'beforebegin', 'afterbegin', 'beforeend', 'afterend'
+        let myh2 = document.getElementById('myh2');
+        let elm = document.createElement('span');
+        elm.textContent = '-----text-----';
+        
+        // inserting Adjacent Element
+        myh2.insertAdjacentElement('beforebegin', elm);
+        myh2.insertAdjacentElement('afterbegin', elm);
+        myh2.insertAdjacentElement('beforeend', elm);
+        myh2.insertAdjacentElement('afterend',elm);
+
+    </script>
+    <img src="images/42 insertAdjacentElement.jpg" style="float: right;">
+</body>
+</html>

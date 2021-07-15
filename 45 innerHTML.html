@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <script>
+        let u = document.getElementById('myul');
+
+        console.log(u); // see the diff between u & u.innerHTML
+        console.log(u.innerHTML);
+
+        // setting values using innerHTML
+        u.innerHTML = `
+        <ul>
+        <li>content 1</li>
+        <li>content 2</li>
+        <li>content 3</li>
+        <li>content 4</li>
+        <li>content 5</li>
+        </ul>
+        `
+
+    </script>
+    <img src="images/45 innerHTML.jpg" style="float: right;">
+</body>
+</html>

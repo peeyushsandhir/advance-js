@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloneNode</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <div id="mydiv">
+
+    </div>
+    <script>
+        let myul = document.getElementById('myul');
+        let dupli = myul.cloneNode(false);
+        let dupli2 = myul.cloneNode(true);
+
+        console.log(dupli); // only element
+        console.log(dupli2);// element with all it's child
+
+        // appending clone node to document
+        let mydiv = document.getElementById('mydiv');
+        mydiv.append(dupli2);
+    </script>
+    <img src="images/49 cloneNode.jpg" style="float: right;">
+</body>
+</html>

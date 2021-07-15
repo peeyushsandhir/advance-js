@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outerHTML</title>
+</head>
+<body>
+    <div id="mydiv">
+        <ul id="myul">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+    </div>
+    <script>
+        let mydiv = document.getElementById('mydiv');
+        let myul = document.getElementById('myul');
+        console.log(myul.outerHTML);
+
+        // setting content
+        myul.outerHTML = '<h3>Content changed</h3>';
+        console.log(mydiv.outerHTML);
+
+    </script>
+</body>
+</html>
