@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replaceNode</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>item 1</li>
+        <li id="item2">item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <span id="myspan">span</span>
+    <script>
+        // parenetNode.replaceChild(newChild, oldChild)
+
+        let myul = document.getElementById('myul');
+        let i2 = document.getElementById('item2');
+        let elm = document.createElement('li');
+        elm.textContent = 'new element';
+
+        // replacing with new child
+        let x = myul.replaceChild(elm, i2);
+        console.log(x);
+
+        // replacing with existing child
+        let myspan = document.getElementById('myspan');
+        myul.replaceChild(myspan, elm)
+
+    </script>
+    <img src="images/51 replaceNode.jpg" style="float: right;">
+</body>
+</html>

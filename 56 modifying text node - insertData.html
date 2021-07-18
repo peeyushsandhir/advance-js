@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modifying text node - insertData</title>
+</head>
+<body>
+    <h1>inserts value as a "String"</h1>
+    <h2 id="myh2">Hello GeekyShows</h2>
+    <script>
+        // textnode.insertData(start, string)
+        let myh2 = document.getElementById('myh2');
+        myh2.firstChild.insertData(2, '  bye  ');
+    </script>
+</body>
+</html>
